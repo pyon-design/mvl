@@ -2,6 +2,7 @@
 
 * Scratch Buffer
 * Uniq
-* Full / Half Width Number Exchange
+* Exchange Number (Full width <-> Half Width)
+* Convert Chinese-numerals to Arabic-numerals
 * Csv cut
 
