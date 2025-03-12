@@ -1,7 +1,7 @@
 vim9script
 # MVL.vim: vim utily plugin for my vim-life
 # Version: 0.2
-# Last Changed: 2025-03-07 Fri 20:38:05
+# Last Changed: 2025-03-13 Thu 06:30:56
 # Maintainer: Tak Mutoh
 # License: This files is placed in the public domain.
 
@@ -1074,6 +1074,15 @@ enddef
 
 if !exists(":Cn2An")
     command -nargs=0 -range Cn2An :call ChineseNum2ArabicNum(<line1>, <line2>)
+endif
+
+## Lint wxWidgets source (output by wxFormBuilder)
+if !exists(":LintWX")
+    command -nargs=0 LintWX {
+        :%s/( /(/g
+        :%s/ )/)/g
+        :%s/ | /|/g
+    }
 endif
 
 ## Uniq
