@@ -1,7 +1,7 @@
 vim9script
 # MVL.vim: vim utily plugin for my vim-life
-# Version: 0.3
-# Last Changed: 2025-03-13 Thu 21:04:04
+# Version: 0.4
+# Last Changed: 2025-05-31 Sat 06:04:31
 # Maintainer: Tak Mutoh
 # License: This files is placed in the public domain.
 
@@ -1082,6 +1082,7 @@ if !exists(":LintWX")
         :%s/( /(/g
         :%s/ )/)/g
         :%s/ | /|/g
+        :%s/,-/, -/g
     }
 endif
 
